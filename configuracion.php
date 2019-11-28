@@ -6,6 +6,7 @@ define("APPLICATION_PATH", dirname($_SERVER['PHP_SELF'])."/");
 
 //Configuración de la conexion a la base de datos
 define("BD_SERVIDOR", getenv('OPENSHIFT_MYSQL_DB_HOST'));
+define("BD_PORT", getenv('OPENSHIFT_MYSQL_DB_PORT'));
 define("BD_NOMBRE", "peliculas");
 define ("BD_USUARIO", "peliculas");
 define ("BD_PASSWORD", "peliculas");
