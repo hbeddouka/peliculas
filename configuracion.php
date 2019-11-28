@@ -4,18 +4,18 @@
 define("CLASS_PATH", dirname($_SERVER['PHP_SELF'])."/");
 define("APPLICATION_PATH", dirname($_SERVER['PHP_SELF'])."/");
 
-//Configuraci髇 de la conexion a la base de datos
+//Configuraci贸n de la conexion a la base de datos
 define("BD_SERVIDOR", "localhost:3306");
 define("BD_NOMBRE", "peliculas");
-define ("BD_USUARIO", "Peliculas123()");
-define ("BD_PASSWORD", "Peliculas123()");
+define ("BD_USUARIO", "peliculas");
+define ("BD_PASSWORD", "peliculas");
 
-//Configuraci髇 de logitudes minimas del login y el password de los usuario
+//Configuraci贸n de logitudes minimas del login y el password de los usuario
 //normales
 define ("LONGITUD_MINIMA_LOGIN", 6);
 define ("LONGITUD_MINIMA_PASSWORD", 6);
 
-//Configuraci髇 del numero de resultados de paginaci髇 por cada pagina
+//Configuraci贸n del numero de resultados de paginaci贸n por cada pagina
 define ("PAGINACION", 10);
 
 ?>
