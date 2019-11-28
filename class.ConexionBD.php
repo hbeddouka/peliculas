@@ -6,11 +6,7 @@ include_once("configuracion.php");
 class ConexionBD {
 
 //---------------------------
-$dbhost = constant("DB_HOST"); // Host name 
-$dbport = constant("DB_PORT"); // Host port
-$dbusername = constant("DB_USER"); // Mysql username 
-$dbpassword = constant("DB_PASS"); // Mysql password 
-$db_name = constant("DB_NAME"); // Database name
+
 
 //Metodo para abrir una conexión a la base de datos
 //$connection = mysqli_connect(DB_HOST, DB_USER, DB_PASS, "", DB_PORT) or die("Error: " . mysqli_error($connection));
