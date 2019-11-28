@@ -28,7 +28,7 @@ class ConexionBD {
 
     //Metodo para abrir una conexión a la base de datos
     function conectar_bd() {
-       $connection = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME, DB_PORT) or die("Error: hola laura");
+       $connection = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME, DB_PORT) or die("Error: hola laura soy hamza");
         return $connection;
 
     }
