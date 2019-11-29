@@ -28,10 +28,8 @@ class ConexionBD {
 
     //Metodo para abrir una conexión a la base de datos
     function conectar_bd() {
-       $mysqlCon = mysqli_connect(getenv('OPENSHIFT_MYSQL_DB_HOST'), getenv('OPENSHIFT_MYSQL_DB_USERNAME'), getenv('OPENSHIFT_MYSQL_DB_PASSWORD'), "", getenv('OPENSHIFT_MYSQL_DB_PORT')) or die("Error: Hola no funciono bien :-(");
-mysqli_select_db($mysqlCon, getenv('OPENSHIFT_APP_NAME')) or die("Error: hola soy hamza");
+       $mysqlCon = mysqli_connect(DB_HOST, getenv('OPENSHIFT_MYSQL_DB_USERNAME'), getenv('OPENSHIFT_MYSQL_DB_PASSWORD'), "peliculas") or die("Error: Hola no funciono bien :-(");
         return $mysqlCon;
-
     }
 
     //Metodo para cerrar una conexión
